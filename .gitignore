@@ -1,0 +1,13 @@
+*.bin
+*.img
+*.mbn
+*.gpg
+*.tar.gz
+uz801_stock/
+critical/
+persist_files/
+dtbs/
+stock-*.dts
+hwinfo-*/
+getprop.txt
+venv/

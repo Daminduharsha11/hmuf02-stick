@@ -1,0 +1,78 @@
+		gpio_leds {
+			compatible = "gpio-leds";
+			status = "okay";
+			pinctrl-names = "default";
+			pinctrl-0 = <0xe0>;
+
+			ftest {
+				gpios = <0x2f 0x6a 0x00>;
+				label = "ftest";
+				linux,default-trigger = "none";
+				default-state = "keep";
+				retain-state-suspended;
+			};
+
+			wifistatus {
+				gpios = <0x2f 0x49 0x00>;
+				label = "wifistatus";
+				linux,default-trigger = "none";
+				default-state = "off";
+				retain-state-suspended;
+			};
+
+			4g_1 {
+				gpios = <0x2f 0x47 0x00>;
+				label = "4g_1";
+				linux,default-trigger = "none";
+				default-state = "off";
+				retain-state-suspended;
+			};
+
+			4g_type {
+				gpios = <0x2f 0x48 0x00>;
+				label = "4g_type";
+				linux,default-trigger = "none";
+				default-state = "off";
+				retain-state-suspended;
+			};
+
+			esim1_en {
+				gpios = <0x2f 0x77 0x00>;
+				label = "esim1_en";
+				linux,default-trigger = "none";
+				default-state = "keep";
+				retain-state-suspended;
+			};
+
+			esim2_en {
+				gpios = <0x2f 0x0e 0x00>;
+				label = "esim2_en";
+				linux,default-trigger = "none";
+				default-state = "keep";
+				retain-state-suspended;
+			};
+
+			esim3_en {
+				gpios = <0x2f 0x0c 0x00>;
+				label = "esim3_en";
+				linux,default-trigger = "none";
+				default-state = "keep";
+				retain-state-suspended;
+			};
+
+			sim_hotplug {
+				gpios = <0x2f 0x72 0x00>;
+				label = "sim_hotplug";
+				linux,default-trigger = "none";
+				default-state = "keep";
+				retain-state-suspended;
+			};
+
+			bat1 {
+				gpios = <0x2f 0x24 0x00>;
+				label = "bat1";
+				linux,default-trigger = "none";
+				default-state = "off";
+				retain-state-suspended;
+			};
+		};

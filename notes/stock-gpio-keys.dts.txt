@@ -1,0 +1,17 @@
+		gpio_keys {
+			compatible = "gpio-keys";
+			input-name = "gpio-keys";
+			pinctrl-names = "tlmm_gpio_key_active", "tlmm_gpio_key_suspend";
+			pinctrl-0 = <0xde>;
+			pinctrl-1 = <0xdf>;
+			vpa-therm-supply = <0x2a>;
+
+			key_freset {
+				label = "key_freset";
+				gpios = <0x2f 0x25 0x00>;
+				linux,input-type = <0x01>;
+				linux,code = <0xd8>;
+				gpio-key,wakeup;
+				debounce-interval = <0x3c>;
+			};
+		};

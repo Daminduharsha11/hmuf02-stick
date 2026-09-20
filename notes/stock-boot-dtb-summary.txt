@@ -1,0 +1,69 @@
+   0.dtb  162230 B  msm-id: 206/0x0 248/0x0 249/0x0 250/0x0 board-id: 1/0       
+   1.dtb  162606 B  msm-id: 206/0x0 248/0x0 249/0x0 250/0x0 board-id: 1/1       
+01_dtbdump_|}<#.dtb  (dtc could not read this one)
+   2.dtb  145667 B  msm-id: 206/0x0 248/0x0 249/0x0 250/0x0 board-id: 8/0         <== MSM8916 + MTP
+02_dtbdump_Qualcomm_Technologies,_Inc._MSM_8916_CDP.dtb  163840 B  msm-id: 206/0x0 248/0x0 249/0x0 250/0x0 board-id: 1/0       
+   3.dtb  145399 B  msm-id: 206/0x0 248/0x0 249/0x0 250/0x0 board-id: 8/256       <== MSM8916 + MTP
+03_dtbdump_Qualcomm_Technologies,_Inc._MSM_8916_SMB1360_CDP.dtb  163840 B  msm-id: 206/0x0 248/0x0 249/0x0 250/0x0 board-id: 1/1       
+   4.dtb  134446 B  msm-id: 206/0x0 248/0x0 249/0x0 250/0x0 board-id: 15/0      
+04_dtbdump_Qualcomm_Technologies,_Inc._MSM_8916_MTP.dtb  147456 B  msm-id: 206/0x0 248/0x0 249/0x0 250/0x0 board-id: 8/0         <== MSM8916 + MTP
+   5.dtb  135397 B  msm-id: 206/0x0 248/0x0 249/0x0 250/0x0 board-id: 16/0      
+05_dtbdump_Qualcomm_Technologies,_Inc._MSM_8916_512MB_MTP.dtb  145408 B  msm-id: 206/0x0 248/0x0 249/0x0 250/0x0 board-id: 8/256       <== MSM8916 + MTP
+   6.dtb  173071 B  msm-id: 233/0x0 240/0x0 242/0x0 board-id: 1/0       
+06_dtbdump_Qualcomm_Technologies,_Inc._MSM8916_RUMI.dtb  135168 B  msm-id: 206/0x0 248/0x0 249/0x0 250/0x0 board-id: 15/0      
+   7.dtb  173515 B  msm-id: 233/0x0 240/0x0 242/0x0 board-id: 1/1       
+07_dtbdump_Qualcomm_Technologies,_Inc._MSM8916_Simulator.dtb  137216 B  msm-id: 206/0x0 248/0x0 249/0x0 250/0x0 board-id: 16/0      
+   8.dtb  163034 B  msm-id: 233/0x0 240/0x0 242/0x0 board-id: 8/0       
+08_dtbdump_,Qualcomm_Technologies,_Inc._MSM_8936_CDP.dtb  174080 B  msm-id: 233/0x0 240/0x0 242/0x0 board-id: 1/0       
+   9.dtb  162353 B  msm-id: 233/0x0 240/0x0 242/0x0 board-id: 8/1       
+09_dtbdump_,Qualcomm_Technologies,_Inc._MSM_8936_SMB1360_CDP.dtb  174080 B  msm-id: 233/0x0 240/0x0 242/0x0 board-id: 1/1       
+  10.dtb  164796 B  msm-id: 233/0x0 240/0x0 242/0x0 board-id: 8/2       
+10_dtbdump_,Qualcomm_Technologies,_Inc._MSM_8936_SMB1360_MTP.dtb  163840 B  msm-id: 233/0x0 240/0x0 242/0x0 board-id: 8/0       
+  11.dtb  169099 B  msm-id: 233/0x0 240/0x0 242/0x0 board-id: 65547/5   
+11_dtbdump_,Qualcomm_Technologies,_Inc._MSM_8936_MTP.dtb  163840 B  msm-id: 233/0x0 240/0x0 242/0x0 board-id: 8/1       
+  12.dtb  182728 B  msm-id: 239/0x0 241/0x0 263/0x0 board-id: 1/0       
+12_dtbdump_,Qualcomm_Technologies,_Inc._MSM_8936_WCD9306_MTP.dtb  165888 B  msm-id: 233/0x0 240/0x0 242/0x0 board-id: 8/2       
+  13.dtb  183172 B  msm-id: 239/0x0 241/0x0 263/0x0 board-id: 1/1       
+13_dtbdump_,Qualcomm_Technologies,_Inc._MSM8939_QRD_SKUK.dtb  169984 B  msm-id: 233/0x0 240/0x0 242/0x0 board-id: 65547/5   
+  14.dtb  172691 B  msm-id: 239/0x0 241/0x0 263/0x0 board-id: 8/0       
+14_dtbdump_,Qualcomm_Technologies,_Inc._MSM_8939_CDP.dtb  184320 B  msm-id: 239/0x0 241/0x0 263/0x0 board-id: 1/0       
+  15.dtb  172010 B  msm-id: 239/0x0 241/0x0 263/0x0 board-id: 8/1       
+15_dtbdump_,Qualcomm_Technologies,_Inc._MSM_8939_SMB1360_CDP.dtb  184320 B  msm-id: 239/0x0 241/0x0 263/0x0 board-id: 1/1       
+  16.dtb  174489 B  msm-id: 239/0x0 241/0x0 263/0x0 board-id: 8/2       
+16_dtbdump_,Qualcomm_Technologies,_Inc._MSM_8939_SMB1360_MTP.dtb  174080 B  msm-id: 239/0x0 241/0x0 263/0x0 board-id: 8/0       
+  17.dtb  156824 B  msm-id: 239/0x0 241/0x0 263/0x0 board-id: 15/0      
+17_dtbdump_,Qualcomm_Technologies,_Inc._MSM_8939_MTP.dtb  172032 B  msm-id: 239/0x0 241/0x0 263/0x0 board-id: 8/1       
+  18.dtb  148371 B  msm-id: 239/0x0 241/0x0 263/0x0 board-id: 16/0      
+18_dtbdump_,Qualcomm_Technologies,_Inc._MSM_8939_WCD9306_MTP.dtb  176128 B  msm-id: 239/0x0 241/0x0 263/0x0 board-id: 8/2       
+  19.dtb  179151 B  msm-id: 239/0x0 241/0x0 263/0x0 board-id: 65547/5 131083/5
+19_dtbdump_,Qualcomm_Technologies,_Inc._MSM8939_RUMI.dtb  157696 B  msm-id: 239/0x0 241/0x0 263/0x0 board-id: 15/0      
+  20.dtb  162206 B  msm-id: 247/0x0                board-id: 1/0       
+20_dtbdump_,Qualcomm_Technologies,_Inc._MSM8939_Simulator.dtb  149504 B  msm-id: 239/0x0 241/0x0 263/0x0 board-id: 16/0      
+  21.dtb  145627 B  msm-id: 247/0x0                board-id: 8/0       
+21_dtbdump_,Qualcomm_Technologies,_Inc._MSM8939_QRD_SKUK.dtb  180224 B  msm-id: 239/0x0 241/0x0 263/0x0 board-id: 65547/5 131083/5
+  22.dtb  146095 B  msm-id: 247/0x0                board-id: 8/1       
+22_dtbdump_Qualcomm_Technologies,_Inc._APQ_8016_CDP.dtb  163840 B  msm-id: 247/0x0                board-id: 1/0       
+23_dtbdump_Qualcomm_Technologies,_Inc._APQ_8016_MTP.dtb  147456 B  msm-id: 247/0x0                board-id: 8/0       
+24_dtbdump_Qualcomm_Technologies,_Inc._APQ_8016_SMB1360_MTP.dtb 6699008 B  msm-id: 247/0x0                board-id: 8/1       
+
+Candidates (msm-id 206 and board platform 8): 4
+
+== 2.dtb  (subtype 0, exact match)
+   model:      "Qualcomm Technologies, Inc. MSM 8916 MTP"
+   compatible: "qcom,msm8916-mtp", "qcom,msm8916", "qcom,mtp"
+   pmic-id:    -
+
+== 3.dtb
+   model:      "Qualcomm Technologies, Inc. MSM 8916 512MB MTP"
+   compatible: "qcom,msm8916-mtp", "qcom,msm8916", "qcom,mtp"
+   pmic-id:    -
+
+== 04_dtbdump_Qualcomm_Technologies,_Inc._MSM_8916_MTP.dtb  (subtype 0, exact match)
+   model:      "Qualcomm Technologies, Inc. MSM 8916 MTP"
+   compatible: "qcom,msm8916-mtp", "qcom,msm8916", "qcom,mtp"
+   pmic-id:    -
+
+== 05_dtbdump_Qualcomm_Technologies,_Inc._MSM_8916_512MB_MTP.dtb
+   model:      "Qualcomm Technologies, Inc. MSM 8916 512MB MTP"
+   compatible: "qcom,msm8916-mtp", "qcom,msm8916", "qcom,mtp"
+   pmic-id:    -
