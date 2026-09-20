@@ -1,4 +1,6 @@
 *.bin
+*.zip
+*.part
 *.img
 *.mbn
 *.gpg
@@ -11,3 +13,6 @@ stock-*.dts
 hwinfo-*/
 getprop.txt
 venv/
+dragonboard410_fw/
+__pycache__/
+.venv/

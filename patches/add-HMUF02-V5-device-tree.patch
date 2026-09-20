@@ -1,0 +1,98 @@
+From: Rudi Knauss <hello@ryjelsum.me>
+Date: Sat, 14 Mar 2026 16:49:02 -0700
+Subject: [PATCH] add HMUF02-V5 device tree
+
+---
+ arch/arm64/boot/dts/qcom/Makefile             |  1 +
+ .../boot/dts/qcom/msm8916-thwc-hmuf02.dts     | 68 +++++++++++++++++++
+ 2 files changed, 69 insertions(+)
+ create mode 100644 arch/arm64/boot/dts/qcom/msm8916-thwc-hmuf02.dts
+
+diff --git a/arch/arm64/boot/dts/qcom/Makefile b/arch/arm64/boot/dts/qcom/Makefile
+index 6d951fbdd44f..ba932d5b2849 100644
+--- a/arch/arm64/boot/dts/qcom/Makefile
++++ b/arch/arm64/boot/dts/qcom/Makefile
+@@ -63,6 +63,7 @@ dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-samsung-j5x.dtb
+ dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-samsung-rossa.dtb
+ dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-samsung-on7.dtb
+ dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-samsung-serranove.dtb
++dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-thwc-hmuf02.dtb
+ dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-thwc-uf896.dtb
+ dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-thwc-ufi001c.dtb
+ dtb-$(CONFIG_ARCH_QCOM)	+= msm8916-vivo-y21l.dtb
+diff --git a/arch/arm64/boot/dts/qcom/msm8916-thwc-hmuf02.dts b/arch/arm64/boot/dts/qcom/msm8916-thwc-hmuf02.dts
+new file mode 100644
+index 000000000000..b771cebe057e
+--- /dev/null
++++ b/arch/arm64/boot/dts/qcom/msm8916-thwc-hmuf02.dts
+@@ -0,0 +1,68 @@
++// SPDX-License-Identifier: GPL-2.0-only
++
++/dts-v1/;
++
++#include "msm8916-ufi.dtsi"
++
++/ {
++	model = "HMUF02-V5 4G Modem Stick";
++	compatible = "thwc,hmuf02-v5", "qcom,msm8916";
++};
++
++&button_restart {
++	gpios = <&tlmm 37 GPIO_ACTIVE_HIGH>;
++};
++
++&led_b {
++	gpios = <&tlmm 73 GPIO_ACTIVE_HIGH>;
++};
++
++&led_g {
++	gpios = <&tlmm 71 GPIO_ACTIVE_HIGH>;
++};
++
++&led_r {
++	gpios = <&tlmm 72 GPIO_ACTIVE_HIGH>;
++};
++
++&mpss {
++	pinctrl-0 = <&sim_ctrl_default>;
++	pinctrl-names = "default";
++};
++
++&button_default {
++	pins = "gpio37";
++	bias-pull-down;
++};
++
++&gpio_leds_default {
++	pins = "gpio73", "gpio71", "gpio72";
++};
++
++/* This selects the external SIM card slot by default
++ * Not known to be fully working - see comments for labels from Android dts
++ */
++&tlmm {
++	sim_ctrl_default: sim-ctrl-default-state {
++		esim-sel-pins {
++			pins = "gpio14", "gpio12"; // "esim2_en, esim3_en"
++			function = "gpio";
++			bias-disable;
++			output-low;
++		};
++
++		sim-en-pins {
++			pins = "gpio114"; // "sim_hotplug"
++			function = "gpio";
++			bias-disable;
++			output-low;
++		};
++
++		sim-sel-pins {
++			pins = "gpio119"; // "esim1_en"
++			function = "gpio";
++			bias-disable;
++			output-high;
++		};
++	};
++};
+-- 
+2.51.2
