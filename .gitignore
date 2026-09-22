@@ -1,3 +1,4 @@
+*.dtb
 *.bin
 *.zip
 *.part
@@ -5,6 +6,7 @@
 *.mbn
 *.gpg
 *.tar.gz
+postmarketOS-export/
 uz801_stock/
 critical/
 persist_files/

@@ -3,7 +3,8 @@
 #
 # Usage (run from ~/edl with your venv active):
 #   bash restore_stock.sh                    show what it WOULD do (writes nothing)
-#   bash restore_stock.sh --yes              restore the bootloader chain (sbl1 tz hyp aboot rpm)
+#   bash restore_stock.sh --yes              restore tz, hyp and aboot (the three pieces we replace)
+#   add  --with-sbl1-rpm  to also rewrite sbl1 and rpm (only if they were ever changed)
 #   bash restore_stock.sh --full --yes       restore the WHOLE flash from uz801-stock.bin
 #   add  --loader PATH  if edl needs a firehose loader file
 #
@@ -12,7 +13,7 @@ set -u
 
 DUMP_DIR=uz801_stock
 FULL_DUMP=uz801-stock.bin
-PARTS="sbl1 tz hyp aboot rpm"
+PARTS="tz hyp aboot"
 YES=0
 FULL=0
 LOADER=""
@@ -21,8 +22,9 @@ while [ $# -gt 0 ]; do
   case "$1" in
     --yes)    YES=1 ;;
     --full)   FULL=1 ;;
+    --with-sbl1-rpm) PARTS="sbl1 tz hyp aboot rpm" ;;
     --loader) shift; LOADER="${1:?--loader needs a path}" ;;
-    -h|--help) sed -n '2,11p' "$0"; exit 0 ;;
+    -h|--help) sed -n '2,13p' "$0"; exit 0 ;;
     *) echo "unknown option: $1" >&2; exit 1 ;;
   esac
   shift
