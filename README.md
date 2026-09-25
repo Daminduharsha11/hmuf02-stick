@@ -3,7 +3,7 @@
 A from-scratch 64-bit mainline Linux kernel (7.0.0) built and booted on the **HMUF02 V5**, a Qualcomm MSM8916 USB LTE dongle that shipped with 32-bit Android 4.3/4.4 and, until now, had **no documented postmarketOS support**. Per the postmarketOS wiki's own Zhihe-series device page, this specific board was previously only known to work "sans LEDs when built for UFI001c" — this repo adds full, verified LED, SIM, and button support via a dedicated device tree.
 
 <p align="center">
-  <img src="docs/neofetch.png" alt="neofetch output showing postmarketOS + Linux 7.0.0 running on HMUF02 V5" width="600">
+  <img src="neofetch.jpeg" alt="neofetch output showing postmarketOS + Linux 7.0.0 running on HMUF02 V5" width="600">
 </p>
 
 ---
